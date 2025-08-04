@@ -142,9 +142,15 @@ nav .lang-btn i {
 
 .trending-carosuel {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     overflow-x: auto;
     padding-bottom: 10px;
+
+}
+
+.card:hover {
+    transform: translatey(-5px);
+    transform: scale(1.03);
 }
 
 .card {
@@ -154,6 +160,7 @@ nav .lang-btn i {
     flex-shrink: 0;
     border-radius: 8px;
     overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .card img {
@@ -188,6 +195,7 @@ nav .lang-btn i {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+  
 }
 
 .reason-card {
@@ -199,7 +207,14 @@ nav .lang-btn i {
     min-width: 250px;
     max-width: 300px;
     padding-bottom: 180px;
+    transition: transform 0.3s ease;
 }
+.reason-card:hover{
+    transform: scale(1.04);
+
+}
+
+
 
 .reason-card h3 {
     font-size: 20px;
